@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -12,30 +13,30 @@ body {
   color: #333;
 }
 
+
 .home {
   background-color: black;
-  height: auto;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding:20px;
-  flex-direction: column;
+  padding: 20px;
+  text-align: center;
 }
 
 .home-box {
   color: white;
-  text-align: center;
-  padding: 40px;
+  padding: 20px;
 }
 
 
 .home-box h1 {
-  font-size: 1.8rem;
+  font-size: 3rem;
   margin-bottom: 10px;
 }
 
 .home-box p {
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 
@@ -78,6 +79,7 @@ nav ul li a {
   text-decoration: none;
   font-weight: 500;
   padding: 5px 10px;
+  transition: background 0.3s, color 0.3s;
 }
 
 nav ul li a:hover {
@@ -85,6 +87,7 @@ nav ul li a:hover {
   color: #000;
   border-radius: 5px;
 }
+
 
 .hero {
   background: #007bff;
@@ -107,6 +110,7 @@ section {
   padding: 50px 20px;
   max-width: 1000px;
   margin: auto;
+  text-align: center;
 }
 
 section h2 {
@@ -119,6 +123,7 @@ section p,
 section li {
   font-size: 1rem;
   line-height: 1.6;
+  text-align: left;
 }
 
 ul {
@@ -128,7 +133,7 @@ ul {
 
 .projects {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
 }
 
@@ -137,7 +142,7 @@ ul {
   padding: 20px;
   border-radius: 10px;
   border: 1px solid #ddd;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .project-card h3 {
@@ -194,10 +199,16 @@ footer {
   background: #0056b3;
 }
 
-
+/* Media Queries */
 @media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   nav ul {
     flex-direction: column;
+    width: 100%;
     margin-top: 10px;
   }
 
@@ -212,8 +223,23 @@ footer {
   section h2 {
     font-size: 1.5rem;
   }
+
+  .home-box h1 {
+    font-size: 2rem;
+  }
+
+  .home-box p {
+    font-size: 1.1rem;
+  }
 }
+
+
 .hidden {
   display: none !important;
 }
 
+.section {
+  padding: 50px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
