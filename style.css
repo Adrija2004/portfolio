@@ -16,7 +16,27 @@ body {
   color: white;
   text-align: center;
   padding: 100px 20px;
+}.home-intro {
+  background-color: black;
+  color: white;
+  padding: 60px 40px;
+  border-radius: 20px;
+  width: 80%;
+  max-width: 800px;
+  margin: 100px auto;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1.5rem;
 }
+.home-intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.home-intro p {
+  font-size: 1.2rem;
+}
+
 
 /* Header */
 header {
