@@ -1,3 +1,6 @@
-document.querySelector('.logo').addEventListener('click', () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-});
+function showSection(sectionId) {
+  const section = document.getElementById(sectionId);
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
+}
