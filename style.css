@@ -11,12 +11,7 @@ body {
   background: #f9f9f9;
   color: #333;
 }
-.home {
-  background-color: #007bff;
-  color: white;
-  text-align: center;
-  padding: 100px 20px;
-}
+
 .home-box {
   background-color: black;
   color: white;
