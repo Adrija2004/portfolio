@@ -1,105 +1,106 @@
-<title>Adrija's Portfolio</title>
-<link rel="stylesheet" href="style.css"/>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adrija's Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
-<nav class="navbar">
-  <div class="nav-container">
-    <ul class="nav-links">
 <body>
   <header>
-    <nav>
-       <div class="main-content hidden"></div>
-        
-      <ul>
-        <li><a href="#" onclick="showSection('home')">Home</a></li>
-        <li><a href="#" onclick="showSection('about')">About</a></li>
-        <li><a href="#" onclick="showSection('projects')">Projects</a></li>
-        <li><a href="#" onclick="showSection('certificates')">Certificates</a></li>
-        <li><a href="#" onclick="showSection('hobbies')">Hobbies</a></li>
-        <li><a href="#" onclick="showSection('internship')">Internship</a></li>
-        <li><a href="#" onclick="showSection('contact')">Contact</a></li>
-      </ul>
+    <nav class="navbar">
+      <div class="nav-container">
+        <ul class="nav-links">
+          <li><a href="#" onclick="showSection('home')">Home</a></li>
+          <li><a href="#" onclick="showSection('about')">About</a></li>
+          <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+          <li><a href="#" onclick="showSection('certificates')">Certificates</a></li>
+          <li><a href="#" onclick="showSection('hobbies')">Hobbies</a></li>
+          <li><a href="#" onclick="showSection('internship')">Internship</a></li>
+          <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
 
-  <section class="home">
-  <div class="home-box">
-    <h1>Hi, I'm Adrija 👋</h1>
-    <p>Aspiring Web Developer | BCA Student</p>
-  </div>
-</section>
-
+  <section id="home" class="home">
+    <div class="home-box">
+      <h1>Hi, I'm Adrija 👋</h1>
+      <p>Aspiring Web Developer | BCA Student</p>
+    </div>
+  </section>
 
   <section id="about" class="section hidden">
     <h2>About Me</h2>
-    <h1>Hi, I'm Adrija Banerjee</h1>
-    <p> A passionate BCA student learning Web Development, Python, and AI tools .To obtain a position as a web developer where I can use my skills in HTML ,CSS , JS, C, , Python, and PHP to develop innovative , user-friendly web interfacesand .A strong communicator and dedicated
-       learner committed to solving real-world problems through teamwork and continuous growth. </p>
+    <h3>Hi, I'm Adrija Banerjee</h3>
+    <p>A passionate BCA student learning Web Development, Python, and AI tools. To obtain a position as a web developer where I can use my skills in HTML, CSS, JS, C, Python, and PHP to develop innovative, user-friendly web interfaces. A strong communicator and dedicated learner committed to solving real-world problems through teamwork and continuous growth.</p>
 
     <h3>Education</h3>
-    <p>BCA, Brainware University<br/>2023 – Present || CGPA- 8.70/10 || </p>
-  </section>
-  </div>
-</nav>
-<button id="topBtn" title="Go to top">↑</button>
+    <p>BCA, Brainware University<br/>2023 – Present || CGPA- 8.70/10</p>
   </section>
 
-<script src="script.js"></script>
+  <section id="projects" class="section hidden">
+    <h2>My Projects</h2>
+    <div class="project-card">
+      <h3>1. Portfolio Website</h3>
+      <p>A personal website to showcase my skills and projects.</p>
+      <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+      <a href="https://github.com/Adrija2004/portfolio" target="_blank">GitHub Repo</a>
+    </div>
+  </section>
+
   <section id="certificates" class="section hidden">
     <h2>Certificates</h2>
     <ul>
-      <li>AI For All – AI Aware Stage Issued by: Intel, CBSE (Central Board of Secondary Education), Digital India (july 2025)
- <li> Data Analytics Job Simulation
-Deloitte (via Forage) — July 2025 Completed practical tasks in: Data Analysis & Forensic Technology</li>
+      <li>AI For All – AI Aware Stage (Intel, CBSE, Digital India – July 2025)</li>
+      <li>Data Analytics Job Simulation (Deloitte via Forage – July 2025)</li>
     </ul>
   </section>
 
-<body>
   <section id="hobbies" class="section hidden">
     <h2>Hobbies</h2>
-    <p>I Outside of academics and coding, I enjoy exploring culinary creativity through cooking and expressing myself through dancing. These activities help
-       me stay balanced, enhance my creativity, and maintain a positive mindset—skills that also reflect in my approach to problem-solving and teamwork..</p>
+    <p>I enjoy cooking and dancing. These activities help me stay balanced, enhance creativity, and maintain a positive mindset.</p>
   </section>
+
   <section id="internship" class="section hidden">
     <h2>Internship</h2>
     <p><strong>Company:</strong> Dilwado.com<br/>
     <strong>Role:</strong> Web Intern<br/>
     <strong>Duration:</strong> 1 Month</p>
-</section>
-  <section id="projects" class="section hidden">
-    <h2>My Projects</h2>
-    
-    <div class="project-card">
-      <h3>1. Portfolio Website</h3>
-      <p>A personal website to showcase my skills and projects.</p>
-      <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
-      <a href="https://github.com/Adrija2004/portfolio">GitHub Repo</a>
-    </div>
-</section>
-  <section id="contact" class="section hidden">
-  <h2>Contact Me</h2>
-  <p>Feel free to reach out for collaborations, internships, or any queries.</p>
-  <p>Email: <a href="banarjeeadrija@gmail.com">banarjeeadrija@gmail.com</a></p>
-  <p>GitHub: <a href="https://github.com/Adrija2004" target="_blank">https://github.com/Adrija2004</a></p>
-  <p>LinkedIn: <a href="www.linkedin.com/in/adrija-banerjee-73b6a2333" target="_blank">www.linkedin.com/in/adrija-banerjee-73b6a233</a></p>
-</section>
+  </section>
 
-  <footer class="hidden" id="footer"></footer>
+  <section id="contact" class="section hidden">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:banarjeeadrija@gmail.com">banarjeeadrija@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/Adrija2004" target="_blank">Adrija2004</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/adrija-banerjee-73b6a2333" target="_blank">adrija-banerjee</a></p>
+  </section>
+
+  <footer id="footer" class="hidden">
     <p>&copy; 2025 Adrija Banerjee</p>
   </footer>
+
+  <button id="topBtn" title="Go to top" onclick="scrollToTop()">&uarr;</button>
+
   <script>
     function showSection(id) {
-      const sections = document.querySelectorAll(".section");
-      sections.forEach(sec => sec.classList.add("hidden"));
-
+      document.querySelectorAll(".section").forEach(sec => sec.classList.add("hidden"));
       const footer = document.getElementById("footer");
       if (id === "home") {
         footer.classList.add("hidden");
       } else {
         footer.classList.remove("hidden");
       }
-
       document.getElementById(id).classList.remove("hidden");
     }
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    window.onscroll = function() {
+      document.getElementById("topBtn").style.display = window.scrollY > 100 ? "block" : "none";
+    };
   </script>
 </body>
 </html>
