@@ -72,40 +72,7 @@ nav {
   padding: 0;
   margin: 0;
 }
-nav-links li {
-  margin: 0 10px;
-}
 
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  padding: 5px 10px;
-  display: inline-block;
-  transition: background 0.3s, color 0.3s;
-}
-
-.nav-links a:hover {
-  background: #ffcc00;
-  color: #000;
-  border-radius: 5px;
-}
-
-/* Hamburger Icon (hidden by default) */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  margin-left: auto;
-}
-
-.hamburger span {
-  height: 3px;
-  width: 25px;
-  background: #fff;
-  margin: 4px 0;
-  border-radius: 2px;
-}
 
 .logo {
   font-size: 1.8em;
@@ -113,36 +80,30 @@ nav-links li {
   color: #fff;
 }
 
- @media screen and (max-width: 768px) {
-  .nav-container {
-    position: relative;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    align-items: flex-start;
-    background: #333;
-    position: absolute;
-    top: 50px;
-    left: 0;
-    width: 100%;
-    display: none;
-  }
-  .nav-links.active {
-    display: flex;
-  }
-  .nav-links li {
-    margin: 15px 20px;
-  }
-
-  .hamburger {
-    display: flex;
-  }
-
-  header {
-    padding: 10px 15px;
-  }
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
 }
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 5px 10px;
+  transition: background.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+  background: #ffcc00;
+  color: grey;
+  border-radius: 5px;
+}
+
 
 .hero {
   background: #007bff;
@@ -279,12 +240,12 @@ footer {
     font-size: 1.5rem;
   }
 
-  .home-box h1, section h2 {
-    font-size: 1.5rem;
+  .home-box h1 {
+    font-size: 2rem;
   }
 
-  .home-box p, section p,section li {
-    font-size: 1rem;
+  .home-box p {
+    font-size: 1.1rem;
   }
 }
 
