@@ -4,7 +4,6 @@ function showSection(sectionId) {
     section.scrollIntoView({ behavior: 'smooth' });
   }
 }
-function toggleNav() {
-  document.getElementById('navLinks').classList.toggle('active');
-}
+
+
 console.log("Test update for sync");
