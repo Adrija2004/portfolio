@@ -4,4 +4,3 @@ function showSection(sectionId) {
     section.scrollIntoView({ behavior: 'smooth' });
   }
 }
-// test
