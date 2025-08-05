@@ -23,7 +23,8 @@
     </nav>
   </header>
 
-  <section id="home" class="home">
+  <section id="home"
+   class="home section "> 
     <div class="home-box">
       <h1>Hi, I'm Adrija 👋</h1>
       <p>Aspiring Web Developer | BCA Student</p>
@@ -100,7 +101,37 @@
 
     window.onscroll = function() {
       document.getElementById("topBtn").style.display = window.scrollY > 100 ? "block" : "none";
-    };
+    }; 
+    
+  function showSection(id) {
+    
+    document.querySelectorAll(".section").forEach(sec => sec.classList.add("hidden"));
+    
+    document.getElementById(id).classList.remove("hidden");
+
+    
+    const footer = document.getElementById("footer");
+    if (id === "home") {
+      footer.classList.add("hidden");
+    } else {
+      footer.classList.remove("hidden");
+    }
+
+    
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+  }
+
+  function scrollToTop() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  }
+
+  window.onscroll = function() {
+    document.getElementById("topBtn").style.display = window.scrollY > 100 ? "block" : "none";
+  };
+
+  window.onload = function() {
+    showSection('home');
+  }
   </script>
 </body>
 </html>
