@@ -15,7 +15,7 @@ body {
 
 
 .home {
-  background-color: blue;
+  background-color: grey;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -84,7 +84,7 @@ nav ul li a {
 
 nav ul li a:hover {
   background: #ffcc00;
-  color: #000;
+  color: grey;
   border-radius: 5px;
 }
 
