@@ -4,3 +4,4 @@ function showSection(sectionId) {
     section.scrollIntoView({ behavior: 'smooth' });
   }
 }
+console.log("Test update for sync");
