@@ -9,19 +9,24 @@
 </head>
 <body>
   <header>
-    <nav class="navbar">
-      <div class="nav-container">
-        <ul class="nav-links">
-          <li><a href="#" onclick="showSection('home')">Home</a></li>
-          <li><a href="#" onclick="showSection('about')">About</a></li>
-          <li><a href="#" onclick="showSection('projects')">Projects</a></li>
-          <li><a href="#" onclick="showSection('certificates')">Certificates</a></li>
-          <li><a href="#" onclick="showSection('hobbies')">Hobbies</a></li>
-          <li><a href="#" onclick="showSection('internship')">Internship</a></li>
-          <li><a href="#" onclick="showSection('contact')">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
+   <nav class="navbar">
+  <div class="nav-container">
+    <div class="hamburger" onclick="toggleNav()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#" onclick="showSection('home')">Home</a></li>
+      <li><a href="#" onclick="showSection('about')">About</a></li>
+      <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+      <li><a href="#" onclick="showSection('certificates')">Certificates</a></li>
+      <li><a href="#" onclick="showSection('hobbies')">Hobbies</a></li>
+      <li><a href="#" onclick="showSection('internship')">Internship</a></li>
+      <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+    </ul>
+  </div>
+</nav>
   </header>
 
   <section id="home"
