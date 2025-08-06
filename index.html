@@ -71,6 +71,33 @@
   </section>
 
 
-  <script src="index.js"></script>
+ 
+    <footer id="footer" class="hidden">
+    <p>&copy; 2025 Adrija Banerjee</p>
+  </footer>
+
+  <button id="topBtn" title="Go to top" onclick="scrollToTop()">&uarr;</button>
+
+  <script src="index.js"> 
+     function showSection(id) {
+      document.querySelectorAll(".section").forEach(sec => sec.classList.add("hidden"));
+      const footer = document.getElementById("footer");
+      if (id === "home") {
+        footer.classList.add("hidden");
+      } else {
+        footer.classList.remove("hidden");
+      }
+      document.getElementById(id).classList.remove("hidden");
+    }
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    window.onscroll = function() {
+      document.getElementById("topBtn").style.display = window.scrollY > 100 ? "block" : "none";
+    };
+  </script>
+  
 </body>
 </html>

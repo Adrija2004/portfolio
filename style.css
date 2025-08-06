@@ -14,7 +14,7 @@ body {
 
 
 .home {
-  background-color: black;
+  background-color: grey;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -24,7 +24,7 @@ body {
 }
 
 .home-box {
-  color: white;
+  color: grey;
   padding: 20px;
 }
 
