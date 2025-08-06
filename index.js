@@ -1,9 +1,13 @@
-// index.js
+
 
 function showSection(sectionId) {
-  const section = document.getElementById(sectionId);
-  if (section) {
-    section.scrollIntoView({ behavior: 'smooth' });
+  const sections = document.querySelectorAll('.section');
+  sections.forEach(section => section.classList.add('hidden'));
+
+  const target = document.getElementById(sectionId);
+  if (target) {
+    target.classList.remove('hidden');
+    target.scrollIntoView({ behavior: 'smooth' });
   }
 }
 
@@ -17,3 +21,6 @@ window.onscroll = function () {
     topBtn.style.display = window.scrollY > 100 ? "block" : "none";
   }
 };
+
+
+window.onload = () => showSection('home');
