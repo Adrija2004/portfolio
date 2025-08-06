@@ -50,12 +50,7 @@ header {
   z-index: 1000;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
+
 
 .logo {
   font-size: 1.8em;
@@ -69,23 +64,37 @@ nav ul {
   flex-wrap: wrap;
 }
 
-nav ul li {
-  margin-left: 20px;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
-nav ul li a {
-  color: white;
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links li a {
   text-decoration: none;
-  font-weight: 500;
-  padding: 5px 10px;
-  transition: background.3s, color 0.3s;
+  font-size: 16px;
+  font-weight: bold;
+  color: #555; /* 👈 grey color */
+  transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-  background: #ffcc00;
-  color: #000;
-  border-radius: 5px;
+.nav-links li a:hover,
+.nav-links li a:focus {
+  color: #000; /* darker grey on hover */
 }
+
 
 
 .hero {
