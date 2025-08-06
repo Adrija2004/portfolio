@@ -25,24 +25,21 @@ body {
   z-index: 1;
 }
 
-
-
-.home-box {
+.home-content {
+  color: white; /* or any color that contrasts with your grey background */
   text-align: center;
+  position: relative;
+  z-index: 2;
 }
 
-
-
-.home-box h1 {
-  font-size: 3rem;
+.home-content h1 {
+  font-size: 2.5rem;
   margin-bottom: 10px;
-   color: white; 
+  color: white;
 }
 
-.home-box p {
-  font-size: 1.3rem;
-   color: white; 
-}
+
+
 
 header {
   background: #333;
