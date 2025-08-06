@@ -15,19 +15,18 @@ body {
 }
 
 .home {
-  background-color: grey;
-  min-height: 100vh;
+  background-color: #555; 
+  color: white; 
+  height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 20px;
-  text-align: center;
+  justify-content: center;
 }
 
 .home-box {
-  color: grey;
-  padding: 20px;
+  text-align: center;
 }
+
 
 
 .home-box h1 {
