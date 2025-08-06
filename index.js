@@ -1,4 +1,5 @@
-// Updated on August 5
+// index.js
+
 function showSection(sectionId) {
   const section = document.getElementById(sectionId);
   if (section) {
@@ -6,5 +7,13 @@ function showSection(sectionId) {
   }
 }
 
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
 
-console.log("Test update for sync");
+window.onscroll = function () {
+  const topBtn = document.getElementById("topBtn");
+  if (topBtn) {
+    topBtn.style.display = window.scrollY > 100 ? "block" : "none";
+  }
+};
